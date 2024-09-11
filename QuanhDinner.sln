@@ -13,6 +13,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanhDinner.Application", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanhDinner.Domain", "QuanhDinner.Domain\QuanhDinner.Domain.csproj", "{29F4057B-7AB4-49E0-88FA-7EA81C0EDB5F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{B7D7EFE2-A237-43FE-972E-AD98B332EA77}"
+	ProjectSection(SolutionItems) = preProject
+		API.md = API.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requests", "Requests", "{E6C5820E-75AE-4224-9EFE-0EADE976EB2E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Authentication", "Authentication", "{12558360-C8ED-4173-B795-9CDBA62E3F31}"
+	ProjectSection(SolutionItems) = preProject
+		Login.http = Login.http
+		Register.http = Register.http
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +55,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{12558360-C8ED-4173-B795-9CDBA62E3F31} = {E6C5820E-75AE-4224-9EFE-0EADE976EB2E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F1EFE655-0A19-4CDC-9C99-B667C8432591}

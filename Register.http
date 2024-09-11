@@ -1,0 +1,12 @@
+@QuanhDinner.API_HostAddress = https://localhost:7161
+
+POST {{QuanhDinner.API_HostAddress}}/api/authentication/register
+Content-Type: application/json
+
+{
+  "firstName": "Le",
+  "lastName": "Anh",
+  "email": "quanh@yopmail.com", 
+  "password": "quanh12345"
+}
+###
