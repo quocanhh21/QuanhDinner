@@ -39,7 +39,6 @@ namespace QuanhDinner.API.Controllers
         [HttpPost("login")]
         public async Task<ActionResult> Login([FromBody] LoginRequest request)
         {
-
             var authResult = _authenticationService.Login(
                 request.Email,
                 request.Password);
