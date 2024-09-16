@@ -9,6 +9,8 @@
             services.Configure<JWTSettings>(configuration.GetSection(JWTSettings.SectionName));
             services.AddSingleton<IJWTTokenGenerator,JWTTokenGenerator>();
             services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
+
+            services.AddScoped<IUserRepository, UserRepository>();
             return services;
         }
     }
