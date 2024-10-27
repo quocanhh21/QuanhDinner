@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\QuanhDinner.Application\QuanhDinner.Application.csproj" />
     <ProjectReference Include="..\QuanhDinner.Contracts\QuanhDinner.Contracts.csproj" />
     <ProjectReference Include="..\QuanhDinner.Infrastructure\QuanhDinner.Infrastructure.csproj" />

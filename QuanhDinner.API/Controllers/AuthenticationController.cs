@@ -1,8 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using QuanhDinner.Application.Services.Authentication;
-using QuanhDinner.Contracts.Authentication;
-
-namespace QuanhDinner.API.Controllers
+﻿namespace QuanhDinner.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
