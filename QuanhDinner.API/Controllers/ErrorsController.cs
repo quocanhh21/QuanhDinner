@@ -7,7 +7,13 @@
         {
             Exception? exception = HttpContext.Features.Get<IExceptionHandlerFeature>()?.Error;
 
-            return Problem();
+            var (statusCode,message) = exception switch
+            {
+                IServiceException serviceException => ((int)serviceException.StatusCode, serviceException.ErrorMessage),
+                _ => (StatusCodes.Status500InternalServerError, "An error occurred")
+            };
+
+            return Problem(statusCode: statusCode,title: message);
         }
     }
 }

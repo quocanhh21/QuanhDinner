@@ -41,7 +41,7 @@
             // Check if user already exists
             if (_userRepository.GetByEmail(email) != null)
             {
-                throw new Exception("User already exists");
+                throw new DuplicateEmailException();
             }
 
             // Create user

@@ -1,4 +1,4 @@
-﻿namespace QuanhDinner.API.Errors
+﻿namespace QuanhDinner.API.Common.Errors
 {
     public class QuanhDinnerProblemDetailsFactory : ProblemDetailsFactory
     {
